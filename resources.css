@@ -2,6 +2,7 @@
 laptop or PC screen.*/
 /* Navigation bar */
 .navbar{
+    
     background-color:rgb(50,133,228);
        display: flex;
    position: -webkit-sticky;
@@ -31,28 +32,22 @@ laptop or PC screen.*/
    transition: 50ms;
    margin-top: 19px;
 }
+   
+body{
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
+   
 
 .container{
     display: flex;
     flex-wrap:wrap;
-    
+    justify-content: space-evenly;
+
 }
 *{
 box-sizing: border-box;
 }
-.navbar h3:hover{    
-     -webkit-box-shadow: 0 0 10px #fff;
-    box-shadow: 0 0 10px #fff;
-    border-radius: 8px;
-    enable-background: 0px;
-    transition: 50ms;
-    height: :50px;
-    margin-top: 19px;
-}
-/*.col-2{
-    float: right;
-    transform:translateX(-50%);
-    transform: translateY(-50%);}*/
+
 
 .col-1{
     width: 402px;
@@ -67,9 +62,7 @@ box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
     transition: all .3s ease-in-out;
     display: inline-block;
-    margin-top: 10px;
     
-   
 }
 .col-1 iframe:hover{
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
