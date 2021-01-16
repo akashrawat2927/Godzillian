@@ -60,6 +60,7 @@ border-width: 5px;
         margin-left: 400px;
         height: 300px;
         width: 50%;
+        border-radius: 25px;
     } 
     /* Styling of articles starts*/
 .a1 a:link{text-decoration: none;
@@ -75,12 +76,14 @@ border-width: 5px;
  margin-top: 3%;
  margin-left: 10%;
  margin-right: 10%;
- border: 0.1px solid;
+ border: none;
+ border-radius: 25px;
  
  }
- .home a:hover{ box-shadow: 2px 2px 5px  red;
+ .a1 a:hover{
+     -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+     box-shadow: 0 0 10px black;
      
-     text-shadow: 0.5px .5px 1px;
      transition: 20ms;
  }
  .ima{
@@ -100,5 +103,21 @@ border-width: 5px;
  }/*styling of query */
  /* styling for the screen of the 
  laptop and pc ends*/
- /* This styling is for the screen which is 
- less in dimension */  
+/* This styling is for the screen which is 
+less in dimension */
+@media screen and (max-width: 600px) {
+    /*Navigation bar starts*/   
+    .navbar a {
+       
+         display:inline-block;
+         text-align: left;
+       
+         margin-right: 0%;
+         
+       }
+       .navh3{margin-left:auto;}
+       /*navigation bar ends*/
+     
+   
+   }
+   
