@@ -1,35 +1,236 @@
-<!DOCTYPE html>
 <html>
-    <head>
 
-        <link rel="stylesheet" href="quiz.css">
-        <title> Questions </title>
+<head>
+<link rel="stylesheet" href="quiz1.css">
+<title>Quiz Questions And Answers</title>
 
+</head>
 
-    </head>
+<body>
 
-  <body>
-    <div class="khopdi">  <!Division khopdi created for header>
-        <center><h1>Questions</h1></center>
-        
-
-    </div>
+<center><h1>Quiz Questions</h1></center>
 
 
+
+<form name="quiz">
+
+
+    <div class="div1">
+        <div class="div2">
+
+<b>Question 1.
+
+<br>Where is the headquarters of the 'National AIDS Control Organisation (NACO)' located?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="Mumbai">Mumbai<br>
+
+<input type="radio" name="q1" value="Delhi">Delhi<br>
+
+<input type="radio" name="q1" value="Kolkata">Kolkata<br>
+
+</blockquote>
+</div>
+<b>
+
+
+<div class="div2">
+Question 2.
+
+<br>Which arm of the Indian Army is to recruit women as Pilots for the first time from next year?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="Corps of signal">corps of signal<br>
+
+<input type="radio" name="q2" value="Armoured corps">Armoured corps<br>
+
+<input type="radio" name="q2" value="Corps of engineers">Corps of engineers<br>
+
+</blockquote>
+</div>
+<b>
+
+<hr>
+<div class="div2">
+Question 3.
+
+<br>The Leader of which country has been given a title of “General secretary” of the ruling Workers’ Party?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="China">China<br>
+
+<input type="radio" name="q3" value="India">India<br>
+
+<input type="radio" name="q3" value="Thailand">Thailand<br>
+
+</blockquote>
+</div>
+<b>
+
+
+<div class="div2">
+Question 4.
+
+<br>Which Union Ministry is to set up a National Faceless Penalty Centre?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="Ministry of defence">Ministry of defence<br>
+
+<input type="radio" name="q4" value="Ministry of finance">Ministry of finance<br>
+
+<input type="radio" name="q4" value="Ministry of MSME">Ministry of MSME<br>
+
+</blockquote>
+</div>
+<b>
+
+
+<div class="div2">
+Question 5.
+
+<br>Ministry of Minority Affairs has decided to geo-tag all Waqf properties in which Indian state/UT?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="Delhi">don't make<br>
+
+<input type="radio" name="q5" value="doesn't makes">doesn't makes<br>
+
+<input type="radio" name="q5" value="doesn't make">doesn't make<br>
+
+</blockquote>
+</div>
+<b>
+
+
+<div class="div2">
+Question 6.
+
+<br>The first edition of National Youth Parliament Festival was held in which year?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q6" value="coal mine">coal mine<br>
+
+<input type="radio" name="q6" value="steel plant">steel plant<br>
+
+<input type="radio" name="q6" value="copper mine">copper mine<br>
+
+</blockquote>
+</div>
+<b>
+    <div class="div2">
+Question 7.
+
+<br>Union Home Minister is to launch the 'Single Window Clearance System' in which sector?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q7" value="2016">2016<br>
+
+<input type="radio" name="q7" value="2018">2018<br>
+
+<input type="radio" name="q7" value="2000">2000<br>
+
+</blockquote>
+</div>
+
+</div>
+
+<b>
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p>
+
+Number of score out of 7 = <input type= text size 15 name= "mark">
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+
+
+
+<form method="post" name="Form" onsubmit="" action="">
+
+</form>
 
 </body>
 
-   
+<script>
+
+var numQues = 7;
+
+var numChoi = 3;
+
+var answers = new Array(15);
+
+answers[0] = "Mumbai";
+
+answers[1] = "Armoured corps";
+
+answers[2] = "India";
+
+answers[3] = "Ministry of defence";
+
+answers[4] = "doesn't make";
+
+answers[5] = "copper mine";
+
+answers[6] = "2000";
 
 
 
+function getScore(form) {
 
+var score = 0;
 
+var currElt;
 
+var currSelection;
 
+for (i=0; i<numQues; i++) {
 
+currElt = i*numChoi;
 
+answered=false;
 
+for (j=0; j<numChoi; j++) {
 
+currSelection = form.elements[currElt + j];
 
-</html>>
+if (currSelection.checked) {
+
+answered=true;
+
+if (currSelection.value == answers[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+
+}
+
+var scoreper = Math.round(score/numQues*100);
+
+form.percentage.value = scoreper + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+</html>
