@@ -65,9 +65,27 @@ border-width: 5px;
     text-decoration: none;
     color: black;
 }
+.links1 a:hover{
+    box-shadow: 3px 3px 3px blue;
+}
 .links1{
     margin-left: 15%;
     font-size: 20px;
     color: rgb(0,121,233);   
 }
-@
+@media screen and (max-width: 600px) {
+    /*Navigation bar starts*/   
+    .navbar a {
+       
+         display:inline-block;
+         text-align: left;
+       
+         margin-right: 0%;
+         
+       }
+
+       .navh3{margin-left:auto;} 
+       /*navigation bar ends*/
+   
+    }
+      

@@ -1,3 +1,4 @@
+/*Navigation bar starts*/
 .navbar{
     background-color:rgb(50,133,228);
        display: flex;
@@ -28,7 +29,7 @@
    transition: 50ms;
    margin-top: 19px;
 }
-
+ /*Navigation bar ends*/
     .img{
        
         background-color: black;
@@ -84,4 +85,26 @@
         margin-left: 400px;
         height: 300px;
         width: 50%;
+    }
+    @media screen and (max-width: 600px) {
+        /*Navigation bar starts*/   
+        .navbar a {
+           
+             display:inline-block;
+             text-align: left;
+           
+             margin-right: 0%;
+             
+           }
+           .navh3{margin-left:auto;}
+           /*navigation bar ends*/
+        .para{
+            margin: auto;
+            font-size: 16px;
+        }
+        .img{
+            margin: auto;
+            height: auto;
+            width: auto;
+        }    
     }
