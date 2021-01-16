@@ -14,3 +14,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     }
+
+     /* editing the box of members names */
+    .a1{ color: rgb(17, 20, 22);
+        font-size: 35px;
+        background-image: linear-gradient(rgb(247, 246, 242), rgb(107, 224, 240));
+       text-align: left;
+        /* margin adding */
+       margin-top: 3%;
+       margin-left: 10%;
+       margin-right: 10%;
+        /* box and borders */
+       border: 0.1px solid;
+       box-shadow: 3px 3px rgb(16, 20, 24);
+       }
