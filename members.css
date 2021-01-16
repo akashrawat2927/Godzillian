@@ -1,1 +1,16 @@
-/*  */ 
+
+    .bgimg
+    { 
+     position: relative;  
+    /* The image used */
+    background-image: url("https://t4.ftcdn.net/jpg/01/15/13/75/240_F_115137528_PB2JaCyZC3wAwLit3miUXHXSztSgtPY8.jpg");
+    /* height and width*/
+    height: 80%;
+    width: 100%; 
+    margin-top: 10%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
