@@ -5,25 +5,21 @@
     margin: 20px;
     padding:40px;
     align-items: center;
-   
-   
     flex-wrap: wrap;
+    border-radius: 20px;
 
 }
 
 .div2{
 
     
-    align-items: center;
-    justify-items: start;
-    align-content: center;
+    
     margin: 10px;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     background-size: contain;
-    background-size: cover;
     width: 200px;
     height: 200px;
-    align-items: flex-start;
+    
 }
 body{
     background: linear-gradient(to right, #23074d, #cc5333);
@@ -33,11 +29,24 @@ body{
     background-color: antiquewhite;
     border-radius: 20px;
     padding:1px;
-    margin: 0 0px;
+    margin: 0 20px;
     display: flex;
     flex-wrap: wrap ;
     justify-content:space-evenly;
     overflow: hidden;
     
+    
     background: linear-gradient(to right, #ff4b1f, #1fddff);
+}
+
+.result{
+
+    
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center ;
+    height: 20px;
+    margin: 5px 100px;
+    
 }

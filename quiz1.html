@@ -2,15 +2,15 @@
 
 <head>
 <link rel="stylesheet" href="quiz1.css">
-<title>Quiz Questions And Answers</title>
+<title>Questions</title>
 
 </head>
 
 <body>
+    <div class="khopdi">
+<center><h1>Questions</h1></center>
 
-<center><h1>Quiz Questions</h1></center>
-
-
+    </div>
 
 <form name="quiz">
 
@@ -96,11 +96,11 @@ Question 5.
 
 <blockquote>
 
-<input type="radio" name="q5" value="Delhi">don't make<br>
+<input type="radio" name="q5" value="Delhi">Delhi<br>
 
-<input type="radio" name="q5" value="doesn't makes">doesn't makes<br>
+<input type="radio" name="q5" value="Goa">Goa<br>
 
-<input type="radio" name="q5" value="doesn't make">doesn't make<br>
+<input type="radio" name="q5" value="Kerela">Kerela<br>
 
 </blockquote>
 </div>
@@ -142,14 +142,14 @@ Question 7.
 </div>
 
 <b>
+  <div class="result">
+  <input type="button"value="Grade Me"onClick="getScore(this.form);">
+  Number of score out of 7 = <input type= text size 7 name= "mark">
+   <input type="reset" value="Clear">
+  Score in percentage = <input type=text size=7 name="percentage">
 
-<input type="button"value="Grade Me"onClick="getScore(this.form);">
 
-<input type="reset" value="Clear"><p>
-
-Number of score out of 7 = <input type= text size 15 name= "mark">
-
-Score in percentage = <input type=text size=15 name="percentage"><br>
+ </div>
 
 </form>
 
@@ -167,7 +167,7 @@ var numQues = 7;
 
 var numChoi = 3;
 
-var answers = new Array(15);
+var answers = new Array(7);
 
 answers[0] = "Mumbai";
 
@@ -177,7 +177,7 @@ answers[2] = "India";
 
 answers[3] = "Ministry of defence";
 
-answers[4] = "doesn't make";
+answers[4] = "Goa";
 
 answers[5] = "copper mine";
 
