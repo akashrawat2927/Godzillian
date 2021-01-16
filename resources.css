@@ -23,6 +23,18 @@ laptop or PC screen.*/
         margin-left: 1%;
         text-decoration: none;
     }
+
+
+.navbar h3:hover
+{ 
+   box-shadow: 0 0 10px #fff;
+   border-radius: 8px;
+   enable-background: 0px;
+   height: 25px;
+   transition: 50ms;
+   margin-top: 19px;
+}
+   
 body{
     background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
 }
@@ -37,15 +49,7 @@ body{
 *{
 box-sizing: border-box;
 }
-.navbar h3:hover{    
-     -webkit-box-shadow: 0 0 10px #fff;
-    box-shadow: 0 0 10px #fff;
-    border-radius: 8px;
-    enable-background: 0px;
-    transition: 50ms;
-    height: :50px;
-    margin-top: 19px;
-}
+
 
 .col-1{
     width: 402px;
@@ -92,19 +96,11 @@ box-sizing: border-box;
     box-shadow: 0 0 10px #fff;
 }
 
+.resourceCard h3:hover{
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
 
-.navbar input[type=text]{
-    float: right;
-    padding: 3px;
-    border:none;
-    border-radius: 15px;
-    height: 50px;
-    text-align: center;
-    width: 140px;
-    margin-top: 9px;
-    align-content: center;
-     font-size: 16px;
-}   /* NAvigation bar ends*/
  
 @media screen and (max-width: 600px) {
 /*Navigation bar starts*/   
@@ -114,8 +110,6 @@ box-sizing: border-box;
         text-align: left;
         width: 20%;
     }
-    .navbar input[type=text] {         
-        border: 1px solid;
-    }
+    
 /*navigation bar ends*/
 }
