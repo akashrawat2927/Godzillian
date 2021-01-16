@@ -1,4 +1,35 @@
 
+ /* navbar changing css */
+.navbar{
+    
+    background-color:rgb(50,133,228);
+    display: flex;
+position: -webkit-sticky;
+position: sticky;
+top: 0px;
+overflow: hidden;
+z-index: 1;
+height: min-content;
+height: 12%;
+width: 100%;
+border-radius: 25px;
+border-width: 5px;
+}
+.navbar a{
+    color: white;
+    margin-inline: 15px;
+    margin-left: 1%;
+    text-decoration: none;
+}
+.navbar h3:hover{
+    box-shadow: 0 0 10px #fff;
+    border-radius: 8px;
+    enable-background: 0px;
+    height:25px;
+    transition: 50ms;
+    margin-top: 19px;
+
+}
 .bgimg
     { 
      position: relative;  
@@ -21,7 +52,7 @@
  .a1{ 
         color: rgb(17, 20, 22);
         font-size: 35px;
-        background-image: linear-gradient(rgb(247, 246, 242), rgb(107, 224, 240));
+        background-image: linear-gradient(rgb(247, 246, 242), rgb(126, 159, 252));
        text-align: left;
         /* margin adding */
        margin-top: 3%;
