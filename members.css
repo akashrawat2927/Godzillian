@@ -1,4 +1,6 @@
-
+  /* This styling is for the screen which is 
+less in dimension */
+    
  /* navbar changing css */
 .navbar{
     
@@ -61,6 +63,7 @@ border-width: 5px;
         /* box and borders */
        border: 0.1px solid;
        box-shadow: 3px 3px rgb(16, 20, 24);
+       justify-content: space-evenly;
        }
 
 /* pseudoclass */
@@ -77,3 +80,31 @@ p:hover{
     width: 50px;
     margin-right: 15px;
     }
+
+    @media screen and (max-width: 600px) {
+        .a1  a{
+            display: inline-block;
+          
+          width: 100%;
+        }
+
+        .bgimg {
+           display: inline-block;
+          
+            width: 50%;
+            height: 50%;
+                  
+        }
+        .ima a {
+           
+            float: center;
+            width: 100%;  
+        }
+        .p2  {
+            display: inline;
+          
+          width: 100%;
+        }
+
+
+      }
