@@ -60,4 +60,64 @@ border-width: 5px;
         margin-left: 400px;
         height: 300px;
         width: 50%;
-    }   
+        border-radius: 25px;
+    } 
+    /* Styling of articles starts*/
+.a1 a:link{text-decoration: none;
+    color:rgb(0,162,255); }
+ .a1 a:visited{
+     text-decoration: none;
+     color: rgb(0,162,255);
+ }
+ .a1
+ { font-size: 23px;
+   display: flex;
+ float: left;
+ margin-top: 3%;
+ margin-left: 10%;
+ margin-right: 10%;
+ border: none;
+ border-radius: 25px;
+ 
+ }
+ .a1 a:hover{
+     -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+     box-shadow: 0 0 10px black;
+     
+     transition: 20ms;
+ }
+ .ima{
+     float:left;
+     height: 200px;
+     width: 200px;
+     object-fit: cover;
+     margin-right: 50px;
+     }/* Styling of articles ends*/
+ /* styling of query*/
+     .ask{font-size: 20px;
+         color: rgb(4,76,117);
+     margin-top: 30px;
+ 
+     padding-bottom: 30px;
+    margin-left: 500px;
+ }/*styling of query */
+ /* styling for the screen of the 
+ laptop and pc ends*/
+/* This styling is for the screen which is 
+less in dimension */
+@media screen and (max-width: 600px) {
+    /*Navigation bar starts*/   
+    .navbar a {
+       
+         display:inline-block;
+         text-align: left;
+       
+         margin-right: 0%;
+         
+       }
+       .navh3{margin-left:auto;}
+       /*navigation bar ends*/
+     
+   
+   }
+   
